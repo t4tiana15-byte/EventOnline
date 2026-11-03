@@ -4,9 +4,3 @@ on_http_request:
     - type: oauth
       config:
         provider: google
-
-  # allow logins *only* from acme.com
-  - expressions:
-    - "!actions.ngrok.oauth.identity.email.endsWith('@acme.com')"
-    actions:
-    - type: denyU
