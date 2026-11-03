@@ -1,0 +1,101 @@
+:root {
+    --dark-blue: #0f172a;
+    --header-blue: #1e293b;
+    --accent-purple: rgb(163, 88, 255);
+    --accent-purple-hover: #9333ea;
+    --text-main: #334155;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --bg-main: #f4f6f9;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.profile-container {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.profile-container h2 {
+    color: var(--dark-blue);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.profile-icon {
+    font-size: 4.5rem;
+    color: var(--accent-purple);
+    background: #f1f5f9;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--accent-purple);
+}
+
+.profile-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+.profile-item i {
+    color: var(--accent-purple);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.profile-item span {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.btn-back {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--accent-purple);
+    color: var(--white) !important;
+    text-decoration: none !important;
+    padding: 0.9rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background-color: var(--accent-purple-hover);
+    transform: translateY(-2px);
+}
